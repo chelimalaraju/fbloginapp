@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+    {% if user and not user.is_anonymous %}
+       <p>You are logged in as {{ user.username }}!</p>
+        <a href="/logout_view">Logout</a>
+    {% endif %}
+       <h1>Albums</h1>
+	    <p>Select an album to view.</p>
+	    <div id="albums">
+{% if albums %}
+<ul class="picture-gallery">
+{% for album in albums %}
+{% if album.src %}
+<li><img src="{{ album.src }}" alt="{{ album.name }}" />
+<span>{{ album.name }}</span></a></li>
+{% endif %}
+{% endfor %}
+</ul>
+{% else %}
+<p>There are no photo albums.</p>
+{% endif %}
+</div>
+{% endblock %}
