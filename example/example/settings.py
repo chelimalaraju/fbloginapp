@@ -26,9 +26,9 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
-SOCIAL_AUTH_FACEBOOK_KEY = '647923625294877'
+SOCIAL_AUTH_FACEBOOK_KEY = 'xxxxxxxxxxxxxxx'
 
-SOCIAL_AUTH_FACEBOOK_SECRET = '65c6cbdf23c5d8cf0054c5fcd52d4af2'
+SOCIAL_AUTH_FACEBOOK_SECRET = 'xxxxxxxxxxxxxxxxxxxxxxxxx'
 
 # Application definition
 
